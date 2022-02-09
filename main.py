@@ -15,7 +15,7 @@ g1 = float(input("Введите значение гаммы: "))
 g2 = float(input("Введите значение множителя: "))
 path = 'pathofexilebota.jpg'
 img_prev = imread(path)
-fig =plt.figure(figsize=(10, 5))
+fig = plt.figure()
 fig.add_subplot(2, 2, 1)
 imshow(img_prev)
 img_sec = skimage.exposure.adjust_gamma(img_prev, gamma=g1, gain=g2)
